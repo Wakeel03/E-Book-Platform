@@ -5,8 +5,8 @@ import StoriesPage from './pages/StoriesPage';
 function App() {
   return (
     <div className="app font-Poppins">
-     <LandingPage />
-     {/* <StoriesPage /> */}
+     {/* <LandingPage /> */}
+     <StoriesPage />
     </div>
   );
 }
