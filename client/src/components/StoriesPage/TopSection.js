@@ -3,9 +3,9 @@ import StoriesCarousel from './StoriesCarousel'
 
 function TopSection() {
 	return (
-		<section className="topSection mb-16">
-			<div className="container flex items-center justify-between mb-16">
-				<h1 className="text-4xl font-medium">Adventure</h1>
+		<section className="topSection mb-12">
+			<div className="container flex flex-col justify-between mb-12 lg:flex-row">
+				<h1 className="text-4xl font-medium mb-6 lg:mb-0">Adventure</h1>
 				<div className="flex h-12 w-100 px-4 rounded-md border border-gray-900">
 					<input placeholder="Search ..." className="text-lg focus:outline-none"/>
 				</div>

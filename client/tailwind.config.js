@@ -6,6 +6,7 @@
      './src/**/*.html',
 
      './src/**/*.js',
+     './src/**/*.jsx',
 
    ],
     darkMode: false, // or 'media' or 'class'
@@ -31,8 +32,12 @@
           "2xl": '1400px'
         }
       },
+      fill: theme => ({
+       'gray': theme('colors.gray.200'),
+       'yellow': '#FFD037 !important',
+     }),
       height: {
-        xl: '480px',
+        xl: '400px',
        }
     },
     variants: {},
