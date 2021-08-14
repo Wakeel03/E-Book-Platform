@@ -35,6 +35,8 @@
       fill: theme => ({
        'gray': theme('colors.gray.200'),
        'yellow': '#FFD037 !important',
+       'red': '#FF304F !important',
+       'blue': '#28C7FA !important',
      }),
       height: {
         xl: '400px',
