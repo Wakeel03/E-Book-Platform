@@ -25,7 +25,7 @@ function StoryDetail({ thumbnail }) {
 
 						<div className="flex">
 							<h3 className="mr-4">12K Views</h3>
-							<h3>2.4K Likes</h3>
+							<h3>2.3K Likes</h3>
 						</div>
 					</div>
 				</div>
