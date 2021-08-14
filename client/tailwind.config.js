@@ -18,6 +18,8 @@
           "secondary-green": "#4DE440",
           "primary-red-darker": "#F52E4C",
           "primary-blue-darker": "#28BFEF",
+
+          "facebook-color": "#3b5998",
         }
       },
       fontFamily: {

@@ -9,12 +9,20 @@
   @apply rounded-md transition duration-300;
 }
 
+.btn-rounded-full {
+  @apply rounded-full transition duration-300 cursor-pointer;
+}
+
 .btn-red {
   @apply bg-primary-red text-white;
 }
 
 .btn-blue {
   @apply bg-primary-blue text-white;
+}
+
+.border-black{
+  border: black 1px solid;
 }
 
 .h-0 {height: 0px;}
