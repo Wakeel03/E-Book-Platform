@@ -3,8 +3,12 @@ import LandingPage from './pages/LandingPage';
 import StoriesPage from './pages/StoriesPage';
 import StoryDetail from './pages/StoryDetail';
 
+import { ApolloProvider } from '@apollo/client'
+import client from './ApolloProvider'
+
 function App() {
   return (
+    <ApolloProvider client={client}>
     <div className="app font-Poppins">
      {/* <LandingPage /> */}
      {/* <StoriesPage /> */}
@@ -20,6 +24,7 @@ function App() {
         <p className="text-sm">Don't have an account? <span className="text-primary-red font-medium cursor-pointer">Sign up!</span></p>
       </div>
     </div>
+    </ApolloProvider>
   );
 }
 
