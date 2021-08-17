@@ -2,15 +2,15 @@ import React from 'react'
 import StoryTag from './StoryTag'
 import { AiFillStar } from "react-icons/ai"
 
-function StoryDetail({ thumbnail }) {
+function StoryDetail({ story: { id, title, content, author, thumbnail} }) {
 	return (
 		<div className="flex h-xl w-full mb-10">
 			<img className="h-full w-1/5 rounded-md mb-2 object-cover mr-8 flex-none" src={thumbnail}/>	
-			<div className="h-full flex flex-col">
+			<div className="h-full flex flex-1 flex-col">
 				<div className="flex flex-between mb-6">
 					<div className="flex-1">
-						<h1 className="text-2xl font-medium mb-2">The Drift</h1>
-						<h2>Ali Mejbri</h2>
+						<h1 className="text-2xl font-medium mb-2">{title}</h1>
+						<h2>{author}</h2>
 					</div>
 
 					<div className="flex flex-col">
@@ -30,7 +30,7 @@ function StoryDetail({ thumbnail }) {
 					</div>
 				</div>
 
-				<p className="leading-8 font-light mb-6 overflow-ellipsis overflow-scroll no-scrollbar">Submerge yourself into the minds of authors, create your own fantasy world submerge yourself into the minds of and yourself into the minds of authors, create your own fantasy world submerge mostly into the minds of Submerge yourself into the minds of authors, create your own fantasy world submerge yourself into the minds of Submerge yourself into the minds of authors, create your own fantasy world submerge yourself into the minds of and yourself into the minds of authors, create your own fantasy world submerge mostly into the minds of Submerge yourself into the minds of authors, create your own fantasy world submerge yourself into the minds.</p>
+				<p className="leading-8 font-light mb-6 overflow-ellipsis overflow-scroll no-scrollbar">{content}</p>
 
 				<div className="flex justify-between mt-auto">
 					<div className="flex">

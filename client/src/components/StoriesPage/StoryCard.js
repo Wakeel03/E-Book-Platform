@@ -1,6 +1,6 @@
 import React from 'react'
 
-function StoryCard({ thumbnail, title }) {
+function StoryCard({ story: {title, thumbnail} }) {
 	return (
 		<div className="flex flex-col flex-none items-center w-36 mr-12">
 			<img className="h-52 w-full rounded-md mb-2 object-cover" src={thumbnail}/>	

@@ -5,18 +5,9 @@ module.exports = gql`
    id: ID!
    title: String!
    author: String!
-   content: String! 
+   content: String!
+   thumbnail: String! 
   }
-  # type Post {
-  #   id: ID!
-  #   body: String!
-  #   createdAt: String!
-  #   username: String!
-  #   comments: [Comment]!
-  #   likes: [Like]!
-  #   likeCount: Int!
-  #   commentCount: Int!
-  # }
   type User {
     id: ID!
     username: String!
@@ -35,8 +26,10 @@ module.exports = gql`
     title: String!
     author: String!
     content: String!
+    thumbnail: String!
   }
   type Query {
+    getAllStories: [Story]
     getStory(storyId: ID!): Story
   }
   type Mutation {

@@ -4,6 +4,7 @@ require('dotenv/config')
 
 const typeDefs = require('./graphql/typeDefs');
 const resolvers = require('./graphql/resolvers');
+const Story = require('./models/Story');
 
 
 const PORT = process.env.port || 5000;
@@ -29,4 +30,8 @@ mongoose.connect(process.env.MONGO_CONNECTION,{
 .catch(err => {
 	console.error(err)
 })
+
+// mongoose.connection.once('open', async() => {
+// 	await Story.deleteMany({})
+// })
 
